@@ -1,0 +1,44 @@
+CAR 
+-------
+create table car1(cname varchar(30),mileage varchar(10),seat varchar(1),cost varchar(10),type varchar(10),primary key(cname));
+insert into car1 vaLues('HONDA CITY','25.6 kmpL','5','13.09 L','Sedan');
+insert into car1 vaLues('HONDA WR-V','17.5 kmpL','7','8.95 L','S.U.V.');
+insert into car1 vaLues('HYUNDAI ELANTRA','22.5 kmpL','5','15.04 L','Sedan');
+insert into car1 vaLues('HYUNDAI VERNA’,'24.8 kmpL','5','9.5 L','Sedan');
+insert into car1 vaLues('MARUTI SUZUKI ALTO K10','24.07 kmpL','4','3.41 L','Hatchback');
+insert into car1 vaLues('MARUTI SUZUKI BALENO','27.39 kmpL','4','8.5 L','Hatchback');
+insert into car1 vaLues('MARUTI SUZUKI SWIFT','28.4 kmpL','4','8.29 L','Hatchback');
+insert into car1 vaLues('MARUTI SUZUKI VITARA BREZZA','24.29 kmpL','7','9.85 L','S.U.V.');
+insert into car1 vaLues('SKODA OCTAVIA','16.7 kmpL','5','16.03 L','Sedan');
+insert into car1 vaLues('TOYOTA INNOVA CRYSTA','13.68 kmpL','7','15.53 L','S.U.V.');
+
+EMPLOYEE
+----------------
+create table employeedb(empid varchar(1),ename varchar(20),salary varchar(6),post varchar(15),primary key(empid));
+insert into employeedb values('1','Sid','62000','Salesperson');
+insert into employeedb values('2','Adam','70000','Salesperson');
+insert into employeedb values('3','Steve','57000','Salesperson');
+insert into employeedb values('4','Rick','95000','Manager');
+insert into employeedb values('5','Zoe','95000','Manager');
+
+REGISTERED
+------------------
+create table registered(cust_id varchar(10), name varchar(50),email varchar(50),password varchar(50),phone varchar(10),primary key(cust_id));
+
+
+SALES
+---------
+create table sales(car_name varchar(30), units_sold varchar(4), primary key(car_name));
+insert into sales vaLues('HYUNDAI ELANTRA','0');
+insert into sales vaLues('HYUNDAI VERNA’,'0');
+insert into sales vaLues('MARUTI SUZUKI ALTO K10','0');
+insert into sales vaLues('MARUTI SUZUKI BALENO','0');
+insert into sales vaLues('MARUTI SUZUKI SWIFT','0');
+insert into sales vaLues('MARUTI SUZUKI VITARA BREZZA','0');
+insert into sales vaLues('SKODA OCTAVIA','0');
+insert into sales vaLues('TOYOTA INNOVA CRYSTA','0');
+
+
+TRACK / BOOK
+---------------------
+create table track(cust_id varchar(20),book_id varchar (20), car_name varchar(30),status varchar(30), primary key(book_id));
